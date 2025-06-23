@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andor - Developer & Kickboxer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/terminal.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="portfolio-site">
+        
+        <header class="header">
+            <nav class="nav">
+                <div class="nav__container">
+                    <a href="#hero" class="nav__logo glitch-text" data-text="Andor">Andor</a>
+                    <ul class="nav__menu">
+                        <li><a href="#hero" class="nav__link">Home</a></li>
+                        <li><a href="#about" class="nav__link">About</a></li>
+                        <li><a href="#skills" class="nav__link">Skills</a></li>
+                        <li><a href="#projects" class="nav__link">Projects</a></li>
+                        <li><a href="#experience" class="nav__link">Experience</a></li>
+                        <li><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            
+            <section id="hero" class="hero">
+                <canvas id="matrix-canvas" class="matrix-bg"></canvas>
+                <div class="hero__background parallax" data-speed="0.5"></div>
+                <div class="hero__content animate-on-scroll">
+                    <div class="hero__title-container">
+                        <h1 class="hero__title morph-text">Hi, I'm Andor</h1>
+                        <div class="hero__subtitle-wrapper">
+                            <span class="hero__subtitle typing-animation">Developer • Tech Nerd • Kickboxer</span>
+                        </div>
+                    </div>
+                    <p class="hero__description">Welcome to my world of code</p>
+                    <div class="hero__cta-container">
+                        <a href="#about" class="hero__cta pulse-button">Discover My Journey</a>
+                        <a href="#projects" class="hero__cta-secondary floating">View Projects</a>
+                    </div>
+                </div>
+                <div class="hero__scroll">
+                    <div class="scroll-arrow animated-arrow"></div>
+                </div>
+            </section>
+
+            
+            <section id="about" class="about">
+                <div class="morphing-bg morph-container animate-on-scroll">
+                    <div class="morph-shape morph-shape--1"></div>
+                    <div class="morph-shape morph-shape--2"></div>
+                    <div class="morph-shape morph-shape--3"></div>
+                </div>
+                <div class="about__container">
+                    <div class="about__content animate-on-scroll">
+                        <h2 class="about__title glitch-text" data-text="About Me">About Me</h2>
+                        <div class="about__info">
+                            <div class="about__text">
+                                <p class="about__description floating">
+                                    I'm a passionate software development student who lives at the intersection of technology and athleticism. 
+                                    My journey combines the precision of coding with the discipline of kickboxing, creating a unique perspective 
+                                    on problem-solving and personal growth.
+                                </p>
+                                <p class="about__description floating">
+                                    I'm still learning and growing every day. I know some HTML/CSS, getting better with JavaScript, 
+                                    and I've been diving into ethical hacking for about 2 years now. I love the challenge of understanding 
+                                    how systems work and how to protect them. Kickboxing keeps me focused and disciplined in everything I do.
+                                </p>
+                            </div>
+                            <div class="about__stats">
+                                <div class="stat-item animate-on-scroll">
+                                    <span class="stat-number counter" data-target="200">0</span>
+                                    <span class="stat-label">Lines of Code Daily</span>
+                                </div>
+                                <div class="stat-item animate-on-scroll">
+                                    <span class="stat-number counter" data-target="3">0</span>
+                                    <span class="stat-label">Projects Completed</span>
+                                </div>
+                                <div class="stat-item animate-on-scroll">
+                                    <span class="stat-number counter" data-target="2">0</span>
+                                    <span class="stat-label">Years Learning Ethical Hacking</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="skills" class="skills">
+                <div class="particle-bg particle-container animate-on-scroll"></div>
+                <div class="skills__container">
+                    <h2 class="skills__title animate-on-scroll glitch-text" data-text="My Arsenal">My Arsenal</h2>
+                    <div class="skills__content">
+                        <div class="skills__image animate-on-scroll morph-container">
+                            <img src="img/skills.jpg" alt="Coding workspace" class="floating" />
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="skills__info animate-on-scroll">
+                            <p class="skills__description">
+                                I'm a software development student with a love for ethical hacking, scripting, and building smart systems. 
+                                Whether it's coding a dashboard or practicing kickboxing, I bring focus, discipline, and creativity into everything I do. 
+                                I'm passionate about learning and always pushing myself to improve both my technical and physical abilities.
+                            </p>
+                            <div class="skills__categories">
+                                <div class="skill-category animate-on-scroll">
+                                    <h3 class="category-title">Programming</h3>
+                                    <div class="skills__list">
+                                        <div class="skill-item floating" data-level="70">
+                                            <span>HTML & CSS</span>
+                                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                                        </div>
+                                        <div class="skill-item floating" data-level="60">
+                                            <span>JavaScript</span>
+                                            <div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div>
+                                        </div>
+                                        <div class="skill-item floating" data-level="45">
+                                            <span>Python</span>
+                                            <div class="skill-bar"><div class="skill-progress" style="width: 45%"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-category animate-on-scroll">
+                                    <h3 class="category-title">Security</h3>
+                                    <div class="skills__list">
+                                        <div class="skill-item floating" data-level="35">
+                                            <span>Ethical Hacking</span>
+                                            <div class="skill-bar"><div class="skill-progress" style="width: 35%"></div></div>
+                                        </div>
+                                        <div class="skill-item floating" data-level="30">
+                                            <span>Cybersecurity Basics</span>
+                                            <div class="skill-bar"><div class="skill-progress" style="width: 30%"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-category animate-on-scroll">
+                                    <h3 class="category-title">Physical</h3>
+                                    <div class="skills__list">
+                                        <div class="skill-item floating" data-level="65">
+                                            <span>Kickboxing</span>
+                                            <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="projects" class="projects">
+                <div class="projects__container">
+                    <h2 class="projects__title animate-on-scroll glitch-text" data-text="My Projects">My Projects</h2>
+                    <div class="projects__grid">
+                        <div class="project-card animate-on-scroll morph-container floating">
+                            <div class="project-image">
+                                <img src="img/project1.jpg" alt="Web Dashboard" />
+                                <div class="project-overlay">
+                                    <div class="project-tech">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Simple Dashboard</h3>
+                                <p class="project-description">A basic dashboard project where I practiced HTML, CSS, and JavaScript fundamentals.</p>
+                            </div>
+                        </div>
+
+                        <div class="project-card animate-on-scroll morph-container floating">
+                            <div class="project-image">
+                                <img src="img/project2.jpg" alt="Security Tool" />
+                                <div class="project-overlay">
+                                    <div class="project-tech">
+                                        <span>Python</span>
+                                        <span>Security</span>
+                                        <span>Learning</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Security Scripts</h3>
+                                <p class="project-description">Basic Python scripts for learning ethical hacking concepts and security fundamentals.</p>
+                            </div>
+                        </div>
+
+                        <div class="project-card animate-on-scroll morph-container floating">
+                            <div class="project-image">
+                                <img src="img/project3.jpg" alt="Portfolio" />
+                                <div class="project-overlay">
+                                    <div class="project-tech">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>Animation</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">This Portfolio</h3>
+                                <p class="project-description">This very website, showcasing my growing skills in web development and design.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="experience" class="experience">
+                <div class="experience__container">
+                    <h2 class="experience__title animate-on-scroll glitch-text" data-text="My Journey">My Journey</h2>
+                    <div class="timeline">
+                        <div class="timeline-item animate-on-scroll floating">
+                            <div class="timeline-marker pulse-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-year">2025</div>
+                                <h3 class="timeline-title">Expanding My Skills</h3>
+                                <p class="timeline-description">Continuing to learn web development, improving my JavaScript, and diving deeper into ethical hacking concepts.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item animate-on-scroll floating">
+                            <div class="timeline-marker pulse-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-year">2024</div>
+                                <h3 class="timeline-title">Getting Into Security</h3>
+                                <p class="timeline-description">Started learning about cybersecurity and ethical hacking. Got fascinated by how systems work and how to protect them.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item animate-on-scroll floating">
+                            <div class="timeline-marker pulse-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-year">2023</div>
+                                <h3 class="timeline-title">Started Programming Journey</h3>
+                                <p class="timeline-description">Began learning HTML, CSS, and basic programming concepts. Started with simple websites and scripts.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item animate-on-scroll floating">
+                            <div class="timeline-marker pulse-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-year">2021</div>
+                                <h3 class="timeline-title">Kickboxing Training</h3>
+                                <p class="timeline-description">Started serious kickboxing training, developing discipline and mental toughness that helps in coding too.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="contact" class="contact">
+                <div class="glitch-bg glitch-container animate-on-scroll"></div>
+                <div class="contact__container">
+                    <h2 class="contact__title animate-on-scroll glitch-text" data-text="Get In Touch">Get In Touch</h2>
+                    <div class="contact__content">
+                        <div class="contact__info animate-on-scroll">
+                            <h3 class="contact__subtitle">Let's Connect</h3>
+                            <p class="contact__description">
+                                I'm always excited to connect with fellow developers, security enthusiasts, or anyone who shares a passion for technology and self-improvement. 
+                                Whether you want to collaborate on a project, share knowledge, or just have a chat about code or kickboxing, feel free to reach out!
+                            </p>
+                            <div class="contact__methods">
+                                <div class="contact-method floating">
+                                    <span class="method-icon">📧</span>
+                                    <span class="method-text">andor.danse@gmail.com</span>
+                                </div>
+                                <div class="contact-method floating">
+                                    <span class="method-icon">💻</span>
+                                    <span class="method-text">Learning and growing</span>
+                                </div>
+                                <div class="contact-method floating">
+                                    <span class="method-icon">🥊</span>
+                                    <span class="method-text">Training partner welcome</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <form id="contact-form" class="contact__form animate-on-scroll morph-container">
+                            <input type="hidden" name="send_to_mail" value="andor.danse@gmail.com" />
+                            <div class="form__group">
+                                <input type="text" name="name" class="form__input glitch-input" placeholder="Your Name" required />
+                                <label class="form__label">Name</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" name="email" class="form__input glitch-input" placeholder="Your Email" required />
+                                <label class="form__label">Email</label>
+                            </div>
+                            <div class="form__group">
+                                <textarea name="message" class="form__textarea glitch-input" placeholder="Your Message" rows="5" required></textarea>
+                                <label class="form__label">Message</label>
+                            </div>
+                            <button type="submit" class="form__button pulse-button glitch-button">
+                                <span class="button-text">Send Message</span>
+                                <span class="button-glitch" data-text="Send Message">Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <canvas id="matrix-canvas"></canvas>
+
+        
+           
+    <button id="terminal-trigger" class="terminal-trigger">
+        <div class="trigger-content">
+            <span class="terminal-icon">&gt;</span>
+            <span class="trigger-text">LEARN MORE</span>
+        </div>
+    </button>
+
+    
+    <div id="terminal-modal" class="terminal-modal hidden">
+        <div class="terminal-backdrop"></div>
+        
+        <div class="terminal-container">
+            
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <div class="terminal-button red"></div>
+                    <div class="terminal-button yellow"></div>
+                    <div class="terminal-button green"></div>
+                </div>
+                <span class="terminal-title">ANDOR@TERMINAL - Interactive File System</span>
+                <button id="terminal-close" class="close-button">✕</button>
+            </div>
+
+            
+            <div class="terminal-content">
+                <div id="terminal-output" class="terminal-output"></div>
+                <div id="terminal-input-line" class="input-line">
+                    <span class="prompt">┌──(andor@terminal)-[/]</span><br>
+                    <span class="prompt-input">└─$ </span>
+                    <input type="text" id="terminal-input" class="terminal-input" autocomplete="off">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <div class="footer__left">
+                        <div class="footer__logo glitch-text" data-text="Andor">Andor</div>
+                        <p class="footer__description">Developer • Tech Nerd • Kickboxer</p>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__social">
+                        <a href="https://github.com/Andy69987" class="social-link floating" target="_blank">
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/andor-danse-427a9a369/" class="social-link floating" target="_blank">
+                          <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/andordanse227/" class="social-link floating" target="_blank">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p>&copy; 2025 Andor. Crafted with passion, code, and a lot of coffee.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="js/terminal.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
